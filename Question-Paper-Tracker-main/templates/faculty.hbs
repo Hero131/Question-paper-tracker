@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>Faculty Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background:linear-gradient(to left, #8383e4, #cbcb55);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            background-color: white;
+            height: 350px;
+            width: 400px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #8383e4;
+            border-radius: 3px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        button[type="submit"] {
+            background-color: #8383e4;
+            color: #cbcb55;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: #cbcb55;
+        }
+    </style>
+</head>
+<body>
+<div style="text-align: center;">
+<h1>FACULTY LOGIN</h1>
+<form action="/auth2" method="post">
+    <img src="https://www.ign.com.cn/sm/t/ign_cn/game/a/amongus/amongus_gvzt.1200.jpg" alt="Logo" width="100" height="100">
+    <label for="faculty-email">Email:</label>
+    <input type="email" id="faculty-email" name="email" required />
+    <br />
+    <label for="faculty-password">Password:</label>
+    <input type="password" id="faculty-password" name="password" required />
+    <br />
+    <button type="submit">Log in</button>
+</form>
+</div>
+</body>
+</html>

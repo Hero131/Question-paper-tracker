@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>Admin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background:linear-gradient(to left, #8383e4, #cbcb55);
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            color: #3f3f3f;
+        }
+        button {
+            font-size: 1.2rem;
+            padding: 0.5rem 2rem;
+            border-radius: 0.25rem;
+            border: none;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+            height: 300px;
+            width: 300px;
+            margin: 0 1rem;
+        }
+        .admin-table-button {
+            background-image: url('https://loghi-famosi.com/wp-content/uploads/2021/08/Among-Us-Logo.png');
+        }
+        .create-faculty-button {
+            background-image: url('https://brandlle.com/wp-content/uploads/2020/10/among-us-character-creator_feature.jpg');
+            margin-right: 0;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+<h1>ADMIN & FACULTY</h1>
+<div class="button-container">
+    <button type="button" class="admin-table-button" onclick="location.href='/admin_table'"></button>
+    <button type="button" class="create-faculty-button" onclick="location.href='/create_faculty'"></button>
+</div>
+</body>
+</html>
